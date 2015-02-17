@@ -10,8 +10,6 @@ def netflix_cal():
     probe = open('probe.txt', 'r')
 
     currentmid = '1'
-    result = []
-    answer = []
     a = []
     b = []
 
