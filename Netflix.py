@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import sys
 import json
-from numpy import mean, subtract, square, sqrt, add, multiply
 
 def netflix_load_cache():
     Ucache = json.load(open('/u/mck782/netflix-tests/pma459-usrAvgCache.json', 'r'))
@@ -67,7 +66,11 @@ def netflix_solve(r, w) :
             w.write(str(int(pred * 10) / 10.0) + '\n')
             p += (pred,)
             a += (actual,)
-    rmse = sqrt(mean(square(subtract(p, a))))
+    result = list(zip(p,a))
+    length = len(result)
+    v = sum([(x - y) ** 2 for x, y in result])/length
+    rmse = v ** (1/2)
+
     w.write('RMSE: ' + str(int(rmse * 100.0)/100.0))
 
 
