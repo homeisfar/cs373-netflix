@@ -54,3 +54,12 @@ def netflix_cal(r, w):
     w.write ("RMSE: ")
     w.write (str(int(100*sqrt(mean(square(subtract(result, answer)))))/100.0))
     w.write ("\n")
+
+
+# TODO: Finish unit tests
+# TODO: Finish pre-post asserts
+# TODO: Create log
+# TODO: Create pydoc
+# TODO: Create SHA (last)
+
+# TODO: Ali Homafar ah26482 home.isfar@gmail.com
