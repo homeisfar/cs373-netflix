@@ -105,10 +105,3 @@ def netflix_solve(r, w) :
     assert type(rmse) is float
     w.write('RMSE: ' + str(int(rmse * 100.0)/100.0) + '\n')
 
-
-# TODO: Create log
-# TODO: Create pydoc
-# TODO: Create SHA (last)
-
-# TODO: Ali Homafar ah26482 home.isfar@gmail.com
-
