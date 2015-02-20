@@ -1,31 +1,11 @@
-./v/filer4b/v38q001/alih/cs373/cs373-netflix/Netflix.py:6: ResourceWarning: unclosed file <_io.TextIOWrapper name='/u/mck782/netflix-tests/pma459-usrAvgCache.json' mode='r' encoding='UTF-8'>
-  Ucache = json.load(open('/u/mck782/netflix-tests/pma459-usrAvgCache.json', 'r'))
-/v/filer4b/v38q001/alih/cs373/cs373-netflix/Netflix.py:7: ResourceWarning: unclosed file <_io.TextIOWrapper name='/u/mck782/netflix-tests/pma459-mvAvgCache.json' mode='r' encoding='UTF-8'>
-  Mcache = json.load(open('/u/mck782/netflix-tests/pma459-mvAvgCache.json', 'r'))
-/v/filer4b/v38q001/alih/cs373/cs373-netflix/Netflix.py:8: ResourceWarning: unclosed file <_io.TextIOWrapper name='/u/mck782/netflix-tests/pma459-answersCache.json' mode='r' encoding='UTF-8'>
-  Acache = json.load(open('/u/mck782/netflix-tests/pma459-answersCache.json', 'r'))
-/v/filer4b/v38q001/alih/cs373/cs373-netflix/Netflix.py:9: ResourceWarning: unclosed file <_io.TextIOWrapper name='/u/mck782/netflix-tests/af22574-movieDates.json' mode='r' encoding='UTF-8'>
-  Ycache = json.load(open('/u/mck782/netflix-tests/af22574-movieDates.json', 'r'))
-/v/filer4b/v38q001/alih/cs373/cs373-netflix/Netflix.py:10: ResourceWarning: unclosed file <_io.TextIOWrapper name='/u/mck782/netflix-tests/cdm2697-userRatingsAveragedOver10yInterval-v2.json' mode='r' encoding='UTF-8'>
-  MYcache = json.load(open('/u/mck782/netflix-tests/cdm2697-userRatingsAveragedOver10yInterval-v2.json', 'r'))
-TestNetflix.py:18: ResourceWarning: unclosed file <_io.TextIOWrapper name='/u/mck782/netflix-tests/pma459-usrAvgCache.json' mode='r' encoding='UTF-8'>
-  self.assertEqual(cache[0], json.load(open('/u/mck782/netflix-tests/pma459-usrAvgCache.json', 'r')))
-.TestNetflix.py:22: ResourceWarning: unclosed file <_io.TextIOWrapper name='/u/mck782/netflix-tests/pma459-mvAvgCache.json' mode='r' encoding='UTF-8'>
-  self.assertEqual(cache[1], json.load(open('/u/mck782/netflix-tests/pma459-mvAvgCache.json', 'r')))
-.TestNetflix.py:26: ResourceWarning: unclosed file <_io.TextIOWrapper name='/u/mck782/netflix-tests/pma459-answersCache.json' mode='r' encoding='UTF-8'>
-  self.assertEqual(cache[2], json.load(open('/u/mck782/netflix-tests/pma459-answersCache.json', 'r')))
-.TestNetflix.py:30: ResourceWarning: unclosed file <_io.TextIOWrapper name='/u/mck782/netflix-tests/af22574-movieDates.json' mode='r' encoding='UTF-8'>
-  self.assertEqual(cache[3], json.load(open('/u/mck782/netflix-tests/af22574-movieDates.json', 'r')))
-.TestNetflix.py:34: ResourceWarning: unclosed file <_io.TextIOWrapper name='/u/mck782/netflix-tests/cdm2697-userRatingsAveragedOver10yInterval-v2.json' mode='r' encoding='UTF-8'>
-  self.assertEqual(cache[4], json.load(open('/u/mck782/netflix-tests/cdm2697-userRatingsAveragedOver10yInterval-v2.json', 'r')))
-.....
+................
 ----------------------------------------------------------------------
-Ran 10 tests in 25.654s
+Ran 16 tests in 57.559s
 
 OK
 Name          Stmts   Miss Branch BrMiss  Cover   Missing
 ---------------------------------------------------------
-Netflix          58     41     24     22    23%   23-45, 53-74
-TestNetflix      35      0      2      1    97%   
+Netflix          69      2     24      5    92%   63, 65
+TestNetflix      76      0      2      1    99%   
 ---------------------------------------------------------
-TOTAL            93     41     26     23    46%   
+TOTAL           145      2     26      6    95%   
