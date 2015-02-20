@@ -29,6 +29,7 @@ def netflix_load_cache():
 
 def netflix_read(s):
     # Every movie ID ends with a colon. Every other line is just a number
+    assert type(s) is str
     if len(s.split(':')) > 1:
         currentmid = s.split(':')[0]
         return (True, currentmid)
@@ -38,6 +39,10 @@ def netflix_read(s):
 
 
 def netflix_cal(currentmid, currentuid, cache):
+    assert int(currentmid) > 0
+    assert int(currentmid) < 17771
+    assert int(currentuid) > 0
+    assert int(currentuid) < 2649430
     Ucache, Mcache, Acache, Ycache, MYcache = cache
     val1 = Ucache[currentuid]
     val2 = Mcache[int(currentmid)]
@@ -49,6 +54,8 @@ def netflix_cal(currentmid, currentuid, cache):
         val3 = 5.0
     if val3 < 1 :
         val3 = 1.0
+
+    assert val3 <= 5.0 and val3 >= 1.0
 
     if (currentmid in Ycache and not Ycache[currentmid] == 'NULL'):
         if (currentuid in MYcache):
@@ -95,6 +102,7 @@ def netflix_solve(r, w) :
     v = sum([(x - y) ** 2 for x, y in result])/length
     rmse = v ** (1/2)
 
+    assert type(rmse) is float
     w.write('RMSE: ' + str(int(rmse * 100.0)/100.0) + '\n')
 
 

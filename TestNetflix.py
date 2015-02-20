@@ -9,10 +9,6 @@ import sys, json
 
 class TestNetflix (TestCase) :
 
-    def test_netflix_cal_1 (self) :
-        r = StringIO( "1:\n30878\n2647871\n1283744\n2488120\n317050\n1904905\n1989766\n")
-        w = StringIO()
-
     def test_netflix_load_cache_1(self) :
         cache = netflix_load_cache();
         f = open('/u/mck782/netflix-tests/pma459-usrAvgCache.json', 'r')
@@ -93,13 +89,6 @@ class TestNetflix (TestCase) :
         w = StringIO()
         netflix_solve(r,w)
         self.assertEqual(w.getvalue(), "10:\n3.3\n3.1\nRMSE: 0.22\n")
-
-
-
-
-
-
-
 
 
 if __name__ == "__main__" :
