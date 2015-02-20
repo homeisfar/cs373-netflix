@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 import sys
 import json
+# An earlier version of the code imported numpy, but we removed
+# all numpy imports to not mess with coverage3 being incapable
+# of finding numpy.
 
 def netflix_load_cache():
     Ucache = json.load(open('/u/mck782/netflix-tests/pma459-usrAvgCache.json', 'r'))
@@ -11,6 +14,7 @@ def netflix_load_cache():
     return (Ucache, Mcache, Acache, Ycache, MYcache)
 
 def netflix_read(s):
+    # Every movie ID ends with a colon. Every other line is just a number
     if len(s.split(':')) > 1:
         currentmid = s.split(':')[0]
         return (True, currentmid)
@@ -24,6 +28,9 @@ def netflix_cal(currentmid, currentuid, cache):
     val1 = Ucache[currentuid]
     val2 = Mcache[int(currentmid)]
     val3 = val2*0.5 + val1*0.7 - 0.7
+
+    # Our calculations can produce values above and below 1 & 5.
+    # Since ratings are 1-5 inclusive, we ceil/floor the values
     if val3 > 5 :
         val3 = 5.0
     if val3 < 1 :
@@ -44,7 +51,8 @@ def netflix_cal(currentmid, currentuid, cache):
         val3 = 1.0
     return (val3, Acache[currentmid][currentuid])
 
-
+# Pass in IOStreams on read and write for STDIN and STDOUT
+# This code has to be run from RunNetflix.py
 def netflix_solve(r, w) :
     """
     r a reader
