@@ -6,11 +6,25 @@ import json
 # of finding numpy.
 
 def netflix_load_cache():
-    Ucache = json.load(open('/u/mck782/netflix-tests/pma459-usrAvgCache.json', 'r'))
-    Mcache = json.load(open('/u/mck782/netflix-tests/pma459-mvAvgCache.json', 'r'))
-    Acache = json.load(open('/u/mck782/netflix-tests/pma459-answersCache.json', 'r'))
-    Ycache = json.load(open('/u/mck782/netflix-tests/af22574-movieDates.json', 'r'))
-    MYcache = json.load(open('/u/mck782/netflix-tests/cdm2697-userRatingsAveragedOver10yInterval-v2.json', 'r'))
+    f = open('/u/mck782/netflix-tests/pma459-usrAvgCache.json', 'r')
+    Ucache = json.load(f)
+    f.close()
+    
+    f = open('/u/mck782/netflix-tests/pma459-mvAvgCache.json', 'r')
+    Mcache = json.load(f)
+    f.close()
+
+    f = open('/u/mck782/netflix-tests/pma459-answersCache.json', 'r')
+    Acache = json.load(f)
+    f.close()
+
+    f = open('/u/mck782/netflix-tests/af22574-movieDates.json', 'r')
+    Ycache = json.load(f)
+    f.close()
+
+    f = open('/u/mck782/netflix-tests/cdm2697-userRatingsAveragedOver10yInterval-v2.json', 'r')
+    MYcache = json.load(f)
+    f.close()
     return (Ucache, Mcache, Acache, Ycache, MYcache)
 
 def netflix_read(s):
