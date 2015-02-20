@@ -11,11 +11,11 @@ def netflix_load_cache():
     return (Ucache, Mcache, Acache, Ycache, MYcache)
 
 def netflix_read(s):
-    if len(line.split(':')) > 1:
-        currentmid = line.split(':')[0]
+    if len(s.split(':')) > 1:
+        currentmid = s.split(':')[0]
         return (True, currentmid)
     else :
-        currentuid = line.split('\n')[0]
+        currentuid = s.split('\n')[0]
         return (False, currentuid)
 
 
@@ -65,9 +65,9 @@ def netflix_solve(r, w) :
             pred, actual = netflix_cal(mid, uid, cache)
             w.write(str(int(pred * 10) / 10.0) + '\n')
             p += (pred,)
-            a += (a,)
+            a += (actual,)
     rmse = sqrt(mean(square(subtract(p, a))))
-    w.write('RMSE: ' + str(int(rsme * 100.0))/100.0)
+    w.write('RMSE: ' + str(int(rmse * 100.0)/100.0))
 
 
 # TODO: Finish unit tests
