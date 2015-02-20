@@ -106,8 +106,6 @@ def netflix_solve(r, w) :
     w.write('RMSE: ' + str(int(rmse * 100.0)/100.0) + '\n')
 
 
-# TODO: Finish unit tests
-# TODO: Finish pre-post asserts
 # TODO: Create log
 # TODO: Create pydoc
 # TODO: Create SHA (last)
