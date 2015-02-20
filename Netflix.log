@@ -1,0 +1,246 @@
+commit f65f79b213adcc60cfe3ceedbc8691fd2421f52c
+Author: homeisfar <danceswithkittens@utexas.edu>
+Date:   Thu Feb 19 21:17:55 2015 -0600
+
+    Near done
+
+commit ab5aff6dcf06996a600498fad36cd21fb594902b
+Merge: af055cf 42bfea6
+Author: homeisfar <danceswithkittens@utexas.edu>
+Date:   Thu Feb 19 21:10:47 2015 -0600
+
+    Merge branch 'master' of https://github.com/homeisfar/cs373-netflix
+
+commit af055cfb85e27c4102845980badee5b4100ae406
+Merge: 227c37d 5a89597
+Author: homeisfar <danceswithkittens@utexas.edu>
+Date:   Thu Feb 19 21:10:27 2015 -0600
+
+    added asserts
+
+commit 42bfea6e99366e9f8167e01f61d9327b3bc5dc76
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Thu Feb 19 21:09:26 2015 -0600
+
+     clean
+
+commit 227c37d82cd10413981a529a7f1486e2f000c8d6
+Author: homeisfar <danceswithkittens@utexas.edu>
+Date:   Thu Feb 19 21:08:34 2015 -0600
+
+    Added asserts
+
+commit 5a89597ac734d6122699f54ee0a80548c5a05d4b
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Thu Feb 19 21:08:30 2015 -0600
+
+    clean up
+
+commit 1fa8a93d0a6ffc370f5285f99c6094978f935f37
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Thu Feb 19 21:04:37 2015 -0600
+
+    better coverage
+
+commit 91eb2ddf0c713061d08bdf635324bbf36f6ef4e6
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Thu Feb 19 20:42:38 2015 -0600
+
+    testing finish
+
+commit e025e8a360ab1af027cb6008496a22a878a13f13
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Thu Feb 19 20:36:25 2015 -0600
+
+    Avoid warnings
+
+commit a864a691fb5c2f9a2596f74f143413c079b6c3ce
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Thu Feb 19 20:31:37 2015 -0600
+
+    Test cases finish
+
+commit b88c952a6b438e91449cc0a739531262715e7cbe
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Thu Feb 19 20:16:20 2015 -0600
+
+    styling
+
+commit 8ce4fbc8faf823011300bfa797f28e8726cc2500
+Merge: 30d109c 1d213c4
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Thu Feb 19 20:12:06 2015 -0600
+
+    Merge branch 'master' of https://github.com/homeisfar/cs373-netflix
+
+commit 30d109c75e0ef122148a8c94e08074df8d577599
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Thu Feb 19 20:11:32 2015 -0600
+
+    finish TestNetflix.py (3/4)
+
+commit 1d213c4b764a2598db7faaaf579bfd68d9f32153
+Merge: 50896d2 cfc3aab
+Author: homeisfar <danceswithkittens@utexas.edu>
+Date:   Thu Feb 19 20:06:09 2015 -0600
+
+    Merge branch 'master' of https://github.com/homeisfar/cs373-netflix
+
+commit 50896d2838fae3d3d4c8ec5fbb185563a5c3c0f8
+Author: homeisfar <danceswithkittens@utexas.edu>
+Date:   Thu Feb 19 20:05:52 2015 -0600
+
+    Added inline comments. Incomplete TestNetflix.out added
+
+commit cfc3aabfc8afef3b22f91c8cb65bf7ef88ad76b0
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Thu Feb 19 19:57:53 2015 -0600
+
+    Truncate number in solver
+
+commit 9b7ac207eba97ec2b4612055ebbbf85f597c77b6
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Thu Feb 19 19:52:24 2015 -0600
+
+    clean up
+
+commit 50a2a6af22330aceb4c4014043de1c95fb700db9
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Thu Feb 19 19:51:02 2015 -0600
+
+    remove numpy part
+
+commit 08ec5a2a05dc11c3e5377b025a540f612bd298ff
+Author: homeisfar <danceswithkittens@utexas.edu>
+Date:   Thu Feb 19 19:43:53 2015 -0600
+
+    Added hashbang
+
+commit b8c89e16cbe71372b79d03c66ddc000950e1ae31
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Thu Feb 19 19:35:22 2015 -0600
+
+    test cases for load_cache() and read()(All passed)
+
+commit 78e8398eaf68510d9bcb165104c2e0dfd43cde0a
+Author: homeisfar <danceswithkittens@utexas.edu>
+Date:   Thu Feb 19 19:30:01 2015 -0600
+
+    Moved netflix revision changes into Netflix.py
+
+commit 6d38d4c2cff296f37482080d3b057042bd3f1e19
+Merge: 03d12fa ddf8149
+Author: homeisfar <danceswithkittens@utexas.edu>
+Date:   Thu Feb 19 19:22:38 2015 -0600
+
+    Merge branch 'master' of https://github.com/homeisfar/cs373-netflix
+
+commit 03d12fa4f3ce6d51da732fbadae5fa7759a0eb95
+Author: homeisfar <danceswithkittens@utexas.edu>
+Date:   Thu Feb 19 19:22:26 2015 -0600
+
+    Fixed a few bugs for runtime
+
+commit ddf8149f938c39fa940c3b8057efeefe4ee02dda
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Thu Feb 19 19:18:55 2015 -0600
+
+    Add more to TestNetflix.py
+
+commit 06b9381971cfd8ea1f0e73361e6a7edd65d927c0
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Thu Feb 19 18:54:52 2015 -0600
+
+    Change structure
+
+commit 13929488ca63fdff51d44d929f57c10dfbfeb259
+Author: homeisfar <danceswithkittens@utexas.edu>
+Date:   Thu Feb 19 18:04:09 2015 -0600
+
+    Added a list of TODOs
+
+commit d0409253ef34c4e7346d4d4f02c0621f9c5002b4
+Author: homeisfar <danceswithkittens@utexas.edu>
+Date:   Thu Feb 19 18:00:28 2015 -0600
+
+    Changed to r/w model
+
+commit 188b5d927b91f6009e6e46fd11a2df580de085d7
+Merge: cd06e13 c6ed2a9
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Thu Feb 19 17:46:53 2015 -0600
+
+    Merge branch 'master' of https://github.com/homeisfar/cs373-netflix
+
+commit cd06e1354ec807ac8cb794973903ae1e282a7acd
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Thu Feb 19 17:46:10 2015 -0600
+
+    hit it to 0.97
+
+commit 41fa6e895777f95a2314e79c808ec86dccf52e8d
+Author: homeisfar <danceswithkittens@utexas.edu>
+Date:   Thu Feb 19 16:56:40 2015 -0600
+
+    Corrected Netflix output
+
+commit c6ed2a91034076bf8db8484dab03e435eb467c1a
+Merge: 34de2e2 41fa6e8
+Author: Ali Homafar <home.isfar@gmail.com>
+Date:   Tue Feb 17 05:45:51 2015 -0600
+
+    Merge branch 'master' of https://github.com/homeisfar/cs373-netflix
+
+commit 34de2e206962b22339e31af9694bbe64e31435d3
+Author: Ali Homafar <home.isfar@gmail.com>
+Date:   Tue Feb 17 05:44:58 2015 -0600
+
+    Acceptance tests added
+
+commit 9c78350ea06a92bfda326059c52caf377315d82f
+Author: Ali Homafar <home.isfar@gmail.com>
+Date:   Tue Feb 17 03:59:17 2015 -0600
+
+    Removed redundant declarations
+
+commit f076803b5d47d728cf5a22eec0b508cf79bec9d7
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Wed Feb 18 15:42:35 2015 -0600
+
+    finish the logic of prediction
+
+commit 518d63f763dcaab7f41c7963c68352e23e44a436
+Author: larry-liu <liudi1990@utexas.edu>
+Date:   Mon Feb 16 16:22:10 2015 -0600
+
+    first
+
+commit 9cef336d46830de969fb8dc0822732a812031f79
+Author: Ali Homafar <home.isfar@gmail.com>
+Date:   Tue Feb 10 21:46:12 2015 -0600
+
+    Weird bug in python
+
+commit 1339b131261bd3f6d21ff04b4b7d83ba3f5de8c1
+Author: Ali Homafar <home.isfar@gmail.com>
+Date:   Tue Feb 10 20:31:13 2015 -0600
+
+    Added cache generator code to help us output a json cache
+
+commit e3d9fa2a8bb600db97c48cd7b130f9eb66dc9c75
+Author: Ali Homafar <home.isfar@gmail.com>
+Date:   Tue Feb 10 18:57:15 2015 -0600
+
+    Added missing .py file
+
+commit e42ea23cd466140239715c181137e991e5332cf8
+Author: Ali Homafar <home.isfar@gmail.com>
+Date:   Tue Feb 10 18:55:08 2015 -0600
+
+    Initial commit of files
+
+commit 95142202aa71f722872e3229c5166e0bd836a905
+Author: Ali Homafar <homeisfar@users.noreply.github.com>
+Date:   Tue Feb 10 18:50:12 2015 -0600
+
+    Initial commit
