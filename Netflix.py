@@ -1,7 +1,7 @@
 import sys
 import json
 from numpy import mean, subtract, square, sqrt, add, multiply
-def netflix_cal():
+def netflix_cal(r, w):
     Ucache = json.load(open('/u/mck782/netflix-tests/pma459-usrAvgCache.json', 'r'))
     Mcache = json.load(open('/u/mck782/netflix-tests/pma459-mvAvgCache.json', 'r'))
     Acache = json.load(open('/u/mck782/netflix-tests/pma459-answersCache.json', 'r'))
@@ -18,7 +18,7 @@ def netflix_cal():
         f = 0
         if len(line.split(':')) > 1:
              currentmid = line.split(':')[0]
-             #print (line, end="")
+             w.write (line)
         else:
              currentuid = line.split('\n')[0]
              r = Acache[currentmid][currentuid]
@@ -42,7 +42,7 @@ def netflix_cal():
                  result += (val3,)
              else:
                  result += (f[0],)
-             #print("%.1f" % val3)
+             w.write("%.1f\n" % val3)
 
              answer += (r,)
 
@@ -51,7 +51,6 @@ def netflix_cal():
             result[i] = 5
         if (result[i] < 1):
             result[i] = 1
-    print (sqrt(mean(square(subtract(result, answer)))))
-
-
-
+    w.write ("RMSE: ")
+    w.write (str(int(100*sqrt(mean(square(subtract(result, answer)))))/100.0))
+    w.write ("\n")
