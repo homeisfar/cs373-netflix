@@ -48,7 +48,17 @@ class TestNetflix (TestCase) :
         self.assertEqual(netflix_read("11111:\n")[1], "11111")
 
 
+    def test_netflix_cal_1(self) :
+        cache = netflix_load_cache()
+        self.assertEqual(netflix_cal('1', '30878', cache)[0], 3.6)
 
+    def test_netflix_cal_2(self) :
+        cache = netflix_load_cache()
+        self.assertEqual(netflix_cal('1', '2647871',cache)[0], 3.1)
+
+    def test_netflix_cal_3(self) :
+        cache = netflix_load_cache()
+        self.assertEqual(netflix_cal('10', '1952305', cache)[0],3.3)
 
 
 
