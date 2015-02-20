@@ -81,7 +81,7 @@ def netflix_solve(r, w) :
     v = sum([(x - y) ** 2 for x, y in result])/length
     rmse = v ** (1/2)
 
-    w.write('RMSE: ' + str(int(rmse * 100.0)/100.0))
+    w.write('RMSE: ' + str(int(rmse * 100.0)/100.0) + '\n')
 
 
 # TODO: Finish unit tests
