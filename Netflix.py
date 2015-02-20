@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import sys
 import json
 from numpy import mean, subtract, square, sqrt, add, multiply
