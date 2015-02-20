@@ -42,6 +42,8 @@ def netflix_cal(currentmid, currentuid, cache):
         val3 = 5.0
     if val3 < 1:
         val3 = 1.0
+    val3 = int(val3 * 10) / 10.0
+
     return (val3, Acache[currentmid][currentuid])
 
 
@@ -63,7 +65,7 @@ def netflix_solve(r, w) :
         else:
             uid = data
             pred, actual = netflix_cal(mid, uid, cache)
-            w.write(str(int(pred * 10) / 10.0) + '\n')
+            w.write(str(pred) + '\n')
             p += (pred,)
             a += (actual,)
     result = list(zip(p,a))
