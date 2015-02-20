@@ -61,6 +61,24 @@ class TestNetflix (TestCase) :
         self.assertEqual(netflix_cal('10', '1952305', cache)[0],3.3)
 
 
+    def test_netflix_solve_1(self):
+        r = StringIO('10014:\n1626179\n1359761\n430376\n')
+        w = StringIO()
+        netflix_solve(r,w)
+        self.assertEqual(w.getvalue(), "10014:\n3.2\n4.2\n3.1\nRMSE: 0.83\n")
+
+    def test_netflix_solve_2(self):
+        r = StringIO('1002:\n2174660\n1685301\n')
+        w = StringIO()
+        netflix_solve(r,w)
+        self.assertEqual(w.getvalue(), "1002:\n3.3\n3.0\nRMSE: 0.86\n")
+     
+    def test_netflix_solve_3(self):
+        r = StringIO('10:\n1952305\n1531863\n')
+        w = StringIO()
+        netflix_solve(r,w)
+        self.assertEqual(w.getvalue(), "10014:\n3.2\n4.2\n3.1\nRMSE: 0.99\n")
+
 
 
 
