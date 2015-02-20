@@ -15,23 +15,38 @@ class TestNetflix (TestCase) :
 
     def test_netflix_load_cache_1(self) :
         cache = netflix_load_cache();
-        self.assertEqual(cache[0], json.load(open('/u/mck782/netflix-tests/pma459-usrAvgCache.json', 'r')))
+        f = open('/u/mck782/netflix-tests/pma459-usrAvgCache.json', 'r')
+        c = json.load(f)
+        f.close()
+        self.assertEqual(cache[0], c)
 
     def test_netflix_load_cache_2(self) :
         cache = netflix_load_cache();
-        self.assertEqual(cache[1], json.load(open('/u/mck782/netflix-tests/pma459-mvAvgCache.json', 'r')))
+        f = open('/u/mck782/netflix-tests/pma459-mvAvgCache.json', 'r')
+        c = json.load(f)
+        f.close()
+        self.assertEqual(cache[1], c)
 
     def test_netflix_load_cache_3(self) :
         cache = netflix_load_cache();
-        self.assertEqual(cache[2], json.load(open('/u/mck782/netflix-tests/pma459-answersCache.json', 'r')))
+        f = open('/u/mck782/netflix-tests/pma459-answersCache.json', 'r')
+        c = json.load(f)
+        f.close()
+        self.assertEqual(cache[2], c)
 
     def test_netflix_load_cache_4(self) :
         cache = netflix_load_cache();
-        self.assertEqual(cache[3], json.load(open('/u/mck782/netflix-tests/af22574-movieDates.json', 'r')))
+        f = open('/u/mck782/netflix-tests/af22574-movieDates.json', 'r')
+        c = json.load(f)
+        f.close()
+        self.assertEqual(cache[3], c)
 
     def test_netflix_load_cache_5(self) :
         cache = netflix_load_cache();
-        self.assertEqual(cache[4], json.load(open('/u/mck782/netflix-tests/cdm2697-userRatingsAveragedOver10yInterval-v2.json', 'r')))
+        f = open('/u/mck782/netflix-tests/cdm2697-userRatingsAveragedOver10yInterval-v2.json', 'r')
+        c = json.load(f)
+        f.close()
+        self.assertEqual(cache[4], c)
 
     def test_netflix_read_1(self) :
         self.assertEqual(netflix_read("1:\n")[0], True)
@@ -77,7 +92,7 @@ class TestNetflix (TestCase) :
         r = StringIO('10:\n1952305\n1531863\n')
         w = StringIO()
         netflix_solve(r,w)
-        self.assertEqual(w.getvalue(), "10014:\n3.2\n4.2\n3.1\nRMSE: 0.99\n")
+        self.assertEqual(w.getvalue(), "10:\n3.3\n3.1\nRMSE: 0.22\n")
 
 
 
